@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Dicionário de dados do Sistema de Gerenciamento de Loja."><title>Dicionário de Dados | Sistema de Gerenciamento de Loja</title>
+<link rel="stylesheet" href="style.css"></head><body>
+<header class="top"><div class="brand"><div class="mark">SG</div><div><strong>Sistema de Gerenciamento de Loja</strong><small>Dicionário de Dados · Governança e Metadados</small></div></div>
+<div class="actions"><button id="themeBtn" class="ghost" aria-label="Alternar tema">☼ Tema</button><a class="button" href="docs/Especificacao_Requisitos_Regras_Negocio_BD.pdf" download>Baixar requisitos PDF</a></div></header>
+<main><section class="hero"><div><span class="eyebrow">DOCUMENTAÇÃO DO BANCO DE DADOS</span><h1>Conheça os dados.<br><em>Entenda o negócio.</em></h1><p>Referência central das estruturas, atributos, relacionamentos e regras do banco de dados da loja.</p></div>
+<div class="hero-card"><span>PROJETO</span><strong>SG Loja</strong><small>PostgreSQL 15+ · Versão 1.0</small><div class="hero-line"></div><small>Data Owner / Data Steward</small><b>João Victor Noronha</b></div></section>
+<section class="stats" id="stats"></section>
+<section class="toolbar"><div><h2>Catálogo de dados</h2><p>Pesquise por tabela, coluna, tipo, descrição ou classificação.</p></div><input id="search" type="search" placeholder="⌕  Buscar tabelas e colunas..." aria-label="Buscar tabelas e colunas"></section>
+<div class="layout"><aside class="side"><h3>NAVEGAÇÃO</h3><nav id="nav"></nav><div class="governance"><h3>GOVERNANÇA</h3><span class="tag">LGPD · Privacidade</span><span class="tag">RBAC · Acesso por perfil</span><span class="tag">DMBOK · Metadados</span><span class="tag">COBIT · Controles</span></div></aside>
+<section id="catalog" class="catalog" aria-live="polite"></section></div>
+<section class="bottom-grid"><article class="panel"><span class="eyebrow">MODELO RELACIONAL</span><h2>Diagrama Entidade-Relacionamento</h2><p>Visualize as entidades e os principais relacionamentos do banco.</p><button id="openDer" class="button">Abrir DER ampliado ↗</button></article>
+<article class="panel"><span class="eyebrow">GOVERNANÇA E ACESSO</span><h2>Princípios aplicados</h2><ul><li>Menor privilégio e segregação de funções.</li><li>Dados pessoais classificados e com acesso restrito.</li><li>Chaves e constraints para integridade.</li><li>Histórico de vendas e movimentações rastreável.</li></ul></article></section>
+<footer><span>SG Loja · Dicionário de Dados</span><span>Projeto acadêmico · João Victor Noronha · 2026</span></footer></main>
+<div id="modal" class="modal" aria-hidden="true"><div class="modal-head"><strong>Diagrama Entidade-Relacionamento</strong><button id="closeDer" class="ghost">Fechar ✕</button></div><div class="zoom-tools"><button id="zoomIn">＋</button><button id="zoomOut">−</button><button id="resetZoom">Ajustar</button></div><div class="viewport" id="viewport"><img id="derImage" src="assets/der.png" alt="Diagrama entidade-relacionamento do sistema de loja"></div></div>
+<script src="https://unpkg.com/@panzoom/panzoom@4.5.1/dist/panzoom.min.js"></script><script src="script.js"></script></body></html>
